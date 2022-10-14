@@ -1,0 +1,14 @@
+Searcher sells a lot of Token A for Token B, driving down the price of Token A and driving up the price of Token B
+User's transaction goes through, which also sells a lot of Token A for Token B, but receives less Token B than originally anticipated. This further drives down Token A price and increases Token B price.
+Searcher sells back their Token B for Token A, ending up with more Token A than they started off with, making a profit.
+
+mistX is a DEX that itself submits all trade transactions through Flashbots, thereby bypassing the mempool entirely, which means other Searchers cannot sandwich attack trades happening on mistX, though the miner itself still can.
+
+if the miner still can, then isnt there not much point of doing this 
+
+ A lot of people have used Flashbots for good in this case, where they can design a bundle of transactions which would first send some ETH to the compromised account from a different account, and then withdraw all the assets the bot did not steal automatically, and ask the miner to order them in that sequential order within the same block. By skipping the mempool and being sure that both transactions will get included within the same block, bots can no longer frontrun your transaction and steal your ETH before you can withdraw your assets.
+
+ Flashbots skips the public mempool
+ which makes frontrunning pointless at today`s date 
+
+ 

@@ -1,0 +1,11 @@
+generally two types of Searchers - those which are looking for very specific MEV opportunities, for example the NFT drop example mentioned above, and those which are running generalized bots willing to make all types of transactions which yield profit.
+
+Frontrunners are bots that are actively looking through the mempool (transactions that have been sent by users but yet have not been mined) to search for profitable transactions. 
+
+Frontrunners are bots that are actively looking through the mempool (transactions that have been sent by users but yet have not been mined) to search for profitable transactions. They replace the addresses with their own address, and test it locally to see if it's actually profitable. If it is they submit a modified transaction with a replaced address and a higher gas price than the original transaction, thereby extracting profit on the transaction.
+
+As of today, the majority of MEV transactions take place through the Flashbots service, which means generalized frontrunners as described above are no longer as profitable as they used to be. Those frontrunners are based on the idea of copying transactions from the mempool and submitting them with a higher gas fees. Through Flashbots, however, transactions skip the mempool entirely, and therefore generalized frontrunners cannot pick up most of the MEV happening today.
+
+Searchers run algorithms to keep track of borrowers on various lending protocols to detect if someone can be liquidated. If they find an opportunity to liquidate someone, they can extract MEV from that opportunity by being the first to get their liquidation transaction mined therefore earning the liquidating fees.
+miners also look for ppl getting liquidated, which they get the liquidation fee % from 
+

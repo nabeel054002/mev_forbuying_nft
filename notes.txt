@@ -1,0 +1,16 @@
+refers to the maximum value that can be extracted from the block production apart from the standard block rewards.
+ Since when creating a block, miners can include, exclude and change the transactions of the block as they wish, this means they can favor some transactions as compared to others and gain some additional profits by doing so. Note that we are talking about miners right now but things will change after the merge.
+
+ Today, however, a large portion of MEV is extracted by independent network participants referred to as Searchers. We will learn more about exactly what they do, but in a nutshell they run complex algorithms to find opportunities for profiting on chain and have bots to automatically submit those transactions to the network.
+
+Miners still continue to get a portion of the MEV profit made by searchers, as searchers generally tend to pay very high gas fees to try and ensure their transaction is included in the block. 
+
+Searchers are basically coders, who code profit making strats on chain,
+they eventually have to pay high gas fee 
+
+Since arbitrage is one of the most common examples of MEV, searchers typically end up paying 90% of their profit to miners in gas fees to be included in the block.
+
+research in the field of Gas Golfing - a fancy word for making minor optimizations to smart contracts and execution to try to minimize gas cost as much as possible, which allows Searchers to increase their gas price while lowering the gas fees thereby ending up with the same amount of total ETH paid for gas.
+
+Searchers use the concept of Gas Golfing to be able to program transactions in such a way that they use the least amount of gas. This is because of the formulae gas fees = gas price * gas used. So if you decrease your gas used, you can increase your gas price to arrive at the same gas fees. This helps in competitive MEV opportunities as by being able to pay higher gas fees than your competitors means that your chances of getting your transaction included are higher.
+

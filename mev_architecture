@@ -1,0 +1,12 @@
+3 parties involved :
+the searcher miner and the relay 
+
+ Searcher wants to send a private request to the miner so that his transactions are not viewable in the open mempool of Ethereum and thus preventing him from front running.
+
+ Using direct payments instead of gas prices allows users to make payments only if their bids are successful, whereas only having a high gas fees means miners are still incentivized to include your transaction even if it not profitable, because they will still get the gas fees from you.
+
+ Now the issue comes because "Searcher" doesn't have to pay anything for the failed bids, they might do a DOS attack and spam the miners with invalid transaction bundles. To prevent this the user's transactions are first sent to the relayer who validates the bundle and also does bundle merging. The relayer also has a reputation system, where legitimate searchers build up their reputation over time whereas DOS attackers and such lose reputation thereby making it harder for them to mess with the system.
+
+ //really need to understand this 
+
+ 
